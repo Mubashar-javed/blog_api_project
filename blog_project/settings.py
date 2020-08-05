@@ -25,6 +25,8 @@ INSTALLED_APPS = [
     'posts.apps.PostsConfig',
     # Third party
     'rest_framework',
+    'rest_framework_swagger',
+
     # this will generate web tokens for us
     'rest_framework.authtoken',
     'rest_auth',
@@ -128,5 +130,6 @@ REST_FRAMEWORK = {
         # used to power browseable API
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    ]
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
