@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'posts.apps.PostsConfig',
     # Third party
     'rest_framework',
-    'rest_framework_swagger',
+    'drf_yasg',
 
     # this will generate web tokens for us
     'rest_framework.authtoken',
