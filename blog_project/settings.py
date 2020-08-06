@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     # Third party
     'rest_framework',
     'drf_yasg',
+    'ckeditor',
 
     # this will generate web tokens for us
     'rest_framework.authtoken',
